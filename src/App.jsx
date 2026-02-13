@@ -3,6 +3,7 @@ import Sidebar from './components/sidebar'
 import Player from './components/player'
 import Display from './components/display'
 import { playerContext } from './context/playercontext'
+import Songs from './songs'
 
 const App = () => {
 
@@ -14,10 +15,9 @@ const App = () => {
         <Display />
       </div>
       <Player/>
-      <audio ref={audioRef} src={track.file} preload='auto'></audio>
+      <audio ref={audioRef} src={track?.file} preload='auto'></audio>
 
     </div>
   )
 }
-
 export default App
