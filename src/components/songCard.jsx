@@ -17,10 +17,6 @@ function SongCard({ image, title, artist, onPlay, isPlaying }) {
       <p className="text-sm text-gray-400 truncate">
         {artist}
       </p>
-
-      <button className="mt-2 text-green-500 font-semibold">
-        {isPlaying ? "Pause" : "Play"}
-      </button>
     </div>
   );
 }
